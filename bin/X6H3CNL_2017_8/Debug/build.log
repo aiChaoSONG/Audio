@@ -1,0 +1,33 @@
+**** Full Build [Tue, 27 Oct 2020 11:06:30] ****
+ Project: Audio
+ Configuration: X6H3CNL_2017_8
+ Build Target: Debug
+********************************
+Cleaning the build output folder "/home/chao/xtensa/Xplorer-8.0.12-workspaces/Audio/bin/X6H3CNL_2017_8/Debug"... 
+
+/home/chao/xtensa/XtDevTools/install/tools/RG-2017.8-linux/XtensaTools/bin/xt-xcc -c -g -fb_opt /home/chao/xtensa/Xplorer-8.0.12-workspaces/Audio/bin/X6H3CNL_2017_8/Debug_Feedback/feedback -fmessage-length=0 -I /home/chao/xtensa/Xplorer-8.0.12-workspaces/Audio -DPROC_X6H3CNL_2017_8 -DCONFIG_X6H3CNL_2017_8 --xtensa-system=/home/chao/xtensa/XtDevTools/install/builds/RG-2017.8-linux/X6H3CNL_2017_8/config --xtensa-core=X6H3CNL_2017_8 --xtensa-params= /home/chao/xtensa/Xplorer-8.0.12-workspaces/Audio/fft.c -o /home/chao/xtensa/Xplorer-8.0.12-workspaces/Audio/bin/X6H3CNL_2017_8/Debug/fft.o 
+"/home/chao/xtensa/Xplorer-8.0.12-workspaces/Audio/fft.c": Warning: No feedback file ; Disabling feedback optimization.
+Time taken: 770 ms 
+
+/home/chao/xtensa/XtDevTools/install/tools/RG-2017.8-linux/XtensaTools/bin/xt-xc++ -Wl,@/home/chao/xtensa/Xplorer-8.0.12-workspaces/Audio/bin/X6H3CNL_2017_8/Debug/objfiles.list -o /home/chao/xtensa/Xplorer-8.0.12-workspaces/Audio/bin/X6H3CNL_2017_8/Debug/Audio.minsize -mlsp=sim -Wl,-r -nostdlib --xtensa-system=/home/chao/xtensa/XtDevTools/install/builds/RG-2017.8-linux/X6H3CNL_2017_8/config --xtensa-core=X6H3CNL_2017_8 --xtensa-params= 
+Time taken: 437 ms 
+
+/home/chao/xtensa/XtDevTools/install/tools/RG-2017.8-linux/XtensaTools/bin/xt-xc++ -Wl,@/home/chao/xtensa/Xplorer-8.0.12-workspaces/Audio/bin/X6H3CNL_2017_8/Debug/objfiles.list -o /home/chao/xtensa/Xplorer-8.0.12-workspaces/Audio/bin/X6H3CNL_2017_8/Debug/Audio -mlsp=sim --xtensa-system=/home/chao/xtensa/XtDevTools/install/builds/RG-2017.8-linux/X6H3CNL_2017_8/config --xtensa-core=X6H3CNL_2017_8 --xtensa-params= 
+Time taken: 539 ms 
+
+******* Code size summary *****
+
+/home/chao/xtensa/XtDevTools/install/tools/RG-2017.8-linux/XtensaTools/bin/xt-size -C /home/chao/xtensa/Xplorer-8.0.12-workspaces/Audio/bin/X6H3CNL_2017_8/Debug/Audio 
+TYPE   	   text	 rodata	   data	    bss	    dec    hex	filename
+code   	  45445	      0	      0	      0	  45445	   b185	/home/chao/xtensa/Xplorer-8.0.12-workspaces/Audio/bin/X6H3CNL_2017_8/Debug/Audio
+literal	    808	      0	      0	      0	    808	    328	/home/chao/xtensa/Xplorer-8.0.12-workspaces/Audio/bin/X6H3CNL_2017_8/Debug/Audio
+other  	   1851	   1352	  12104	    120	  15427	   3c43	/home/chao/xtensa/Xplorer-8.0.12-workspaces/Audio/bin/X6H3CNL_2017_8/Debug/Audio
+Total  	  48104	   1352	  12104	    120	  61680	   f0f0	/home/chao/xtensa/Xplorer-8.0.12-workspaces/Audio/bin/X6H3CNL_2017_8/Debug/Audio
+
+Time taken: 417 ms 
+
+******* ************** *****
+
+Build successful !!
+Total time taken: 2.412 secs
+**** Build Finished [Tue, 27 Oct 2020 11:06:32] ****
